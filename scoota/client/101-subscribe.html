@@ -1,0 +1,72 @@
+<head>
+  <style>
+    button.subscribe-btn-101 {
+      background: #01b0f1;
+      color: white;
+    }
+
+    button.subscribe-btn-101:hover {
+      color: #01b0f1;
+      background:white;
+    }
+  </style>
+</head>
+
+
+
+<template name ="subscribe_101">
+  <vbox class="_dashed">
+    <hbox class="subscribe-101"
+    style="
+      width:80%;
+      margin: 30px auto 3px auto;
+      padding:2px;
+      _margin-left:200px;
+      _align_items: center;
+      _align-content:center;
+      justify-content:space-between;
+      box-sizing:border-box;
+      _margin: 30px 80px;
+      _max-width: 600px;
+      background: #ffffff none repeat scroll 0 0;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      font-size: 18px;
+      height: 70px;
+      ">
+
+    <input class="subscriber-email" type="email" id="mc-email-5692" name="EMAIL"
+    placeholder="enter your email address here."
+    style="
+    background: transparent none repeat scroll 0 0;
+    outline:none;
+    border: 0 none;
+    font-size: 18px;
+    flex-grow:1;
+    __border-radius: 5px;
+    color: black;
+    letter-spacing: 1px;
+    _padding: 10px 11% 10px 30px;
+    margin: 10px;
+    ">
+
+    <button type="submit" class="plus-btn subscribe-btn-101"
+      style="
+      padding: 0 20px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: normal;
+      text-transform: none;
+      border: 2px solid #01b0f1;
+      border-radius: 5px;
+  ">Subscribe</button>
+
+    </hbox>
+
+    <hbox class="qc hide" style="margin-bottom:10px;">
+      Submitting...
+    </hbox>
+
+
+  </vbox>
+</template>

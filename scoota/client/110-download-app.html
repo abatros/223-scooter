@@ -1,0 +1,37 @@
+
+
+
+
+<template name='download_app_110'>
+<section id="110-download-app">
+<vbox
+style="
+  background-color: #f7f9fc;
+  width:100%; max-width:1170px; margin:0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+">
+  <p class="qc">
+    Sign-up for eMail updates and stay tuned for exciting news from SCOOTA.
+  </p>
+  <h2>Download <span class="blue">SCOOTA App</span> soon</h2>
+
+  {{> subscribe_101 width="50%"}}
+
+  <p class="qc">
+    Stay tuned to download our SCOOTA app for free directly in your Play Store or Apple Store.
+  </p>
+
+
+  <hbox class="js-group-container"
+  style="
+    justify-content:center;
+  ">
+    {{> group_item template='visit_play_store_110' groupName='stores-110' visited=true}}
+    {{> group_item template='visit_apple_store_110' groupName='stores-110' }}
+  </hbox>
+
+
+</vbox>
+</section>
+</template>

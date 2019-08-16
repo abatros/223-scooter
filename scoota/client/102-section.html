@@ -1,0 +1,98 @@
+<head>
+  <style>
+    .hot-panel-102 {
+      border: 0px solid red;
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<template name='section_102'>
+  <section id='102'>
+    <hbox class=""
+    style="
+      margin:100px auto 30px auto;
+      margin-bottom:50px;
+      width:100%; max-width: 1170px;
+      padding 0 15px;
+      justify-content: space-between;
+    ">
+    {{> fun_to_ride_102}}
+    <span style="flex-grow: 1;"></span>
+    {{> easy_to_use_102}}
+    <span style="flex-grow: 1;"></span>
+    {{> zero_emission_102}}
+    </hbox>
+  </section>
+</template>
+
+
+<template name="fun_to_ride_102">
+  <vbox id="fun-to-ride"
+  class="panel-102"
+  style="
+  margin-bottom:50px; padding: 20px;
+  flex-basis: 180px;
+  flex-grow: 2;
+  align-items: center;
+  text-align:center;
+  ">
+  <div style="width:180px; height:180px;">
+  <img src="https://www.scoota.asia/wp-content/uploads/2019/02/SCOOTA_e-scooter.png" alt="Home"
+  style="height:100%; max-width:100%; vertical-align:middle;"
+  >
+  </div>
+
+  <h3 class="box-title">Fun to ride</h3>
+  <p>Ride the most up-to-date e-scooter fleet. They are easy to use, extremely fun and up to 25 km/h fast.</p>
+
+  </vbox>
+</template>
+
+
+<template name="easy_to_use_102">
+  <vbox id="easy-to-use"
+  class="panel-102"
+  style="
+  margin-bottom:50px; padding: 20px;
+  flex-basis: 180px;
+  flex-grow: 2;
+  align-items: center;
+  text-align:center;
+  ">
+  <div style="width:180px; height:180px;">
+  <img
+  src="https://www.scoota.asia/wp-content/uploads/2019/02/phone.png"
+  alt="Home"
+  style="height:100%; max-width:100%; vertical-align:middle;"
+  >
+  </div>
+
+  <h3 class="box-title">Easy-to-use</h3>
+  <p>Find SCOOTA at highly frequented pick-up points in cities in Thailand. Pay via your preferred payment method.</p>
+  </vbox>
+</template>
+
+
+<template name="zero_emission_102">
+  <vbox id="zero-emission"
+  class="panel-102"
+  style="
+  margin-bottom:50px; padding: 20px;
+  flex-basis: 180px;
+  flex-grow: 2;
+  align-items: center;
+  text-align:center;
+  ">
+  <vbox style="width:180px; height:180px; ____padding:20px;">
+  <img
+  src="https://www.scoota.asia/wp-content/uploads/2019/02/co2.png"
+  alt="Home"
+  style="height:100%; max-width:100%; vertical-align:middle;"
+  >
+  </vbox>
+
+  <h3 class="box-title">Zero emission</h3>
+  <p>SCOOTA contributes to making cities more livable by reducing traffic. All rides are entirely emission-free.</p>
+  </vbox>
+</template>

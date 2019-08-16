@@ -1,0 +1,155 @@
+<head>
+  <style>
+  #home-101 _h1 {
+    font-weight: 700;
+    line-height:1.1em;
+    margin: 0 0 15px;
+    padding:0;
+  }
+
+  #home-101 p {
+    font-weight:400;
+    _text-align:center;
+  }
+
+  </style>
+</head>
+
+
+
+
+<template name="101-home">
+<section id="101-home">
+<vbox
+style="
+  margin:0; padding:0;
+  background-image:    url(https://www.scoota.asia/wp-content/uploads/2019/02/herobg.jpg);
+  background-size:     100% 100%;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;              /* optional, center the image */
+  __background:transparent url(https://www.scoota.asia/wp-content/uploads/2019/02/herobg.jpg) 100% 100%/cover no-repeat scroll;
+">
+  <hbox
+  class="dashed"
+  style="
+  __background-color: rgb(1,176,241);
+  width:100%; max-width:1170px; margin: 0 auto;
+
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  _width:80%;
+  _padding: 0 10% 0 10%;
+  _padding-top:30px;
+  _padding-bottom:30px;
+  min-height: 100vh;
+  ">
+    {{> left_panel_101}}
+    {{> carousel_101}}
+
+  </hbox>
+</vbox>
+</section>
+</template>
+
+
+<template name="left_panel_101">
+  <vbox id="home-101"
+  style="
+  padding-top: 0px;
+  width:720px;
+  align-items: center;
+  color: white;
+  "
+  >
+    <h1 class="ql white">Let’s ride. Now.</h1>
+    <p>
+      SCOOTA gets you wherever you need to go – whether you’re commuting to work,<br>
+      going to class, running errands or exploring your city.
+      Our electric scooters are fun, easy to ride and completely emission-free.
+    </p>
+    <p>
+      Sign up now to get notified when we launch our brand-new
+      ridesharing app in your city in Thailand.
+    </p>
+
+    <form action="" style="width:100%;">
+      {{> subscribe_101}}
+    </form>
+
+
+    <p>Soon available on</p>
+
+    {{> visit_stores_101}}
+  </vbox>
+</template>
+
+
+<head>
+  <style>
+    .carousel_101 img {
+      __border-radius: 18pt;
+      border: 0px solid green;
+    }
+
+    vbox.owl-carousel-image-101 {
+      max-height:400px; y-overflow:hide;
+    }
+  </style>
+</head>
+
+
+<template name="carousel_101">
+  <div class="carousel_101 dashed"
+  style="
+  margin-left:50px; width:240px; position:relative;
+  _justify-content: center;
+  border-radius: 18pt;
+  border: 0px solid red;
+  _height: 533px;
+  ">
+
+  <div style="position:absolute; width:240px; margin-left:-20px;">
+    <img src="https://www.scoota.asia/wp-content/themes/appton/assets/img/home/home-mockup.png" alt=""
+    style="width:100%;">
+
+  </div>
+
+  <div style="width:240px; _height:300px; y-overflow:hidden">
+    <div class='owl-carousel'
+      style="
+        margin-top:32px;
+        width:200px;
+        __border-radius: 18pt;
+        ">
+      <vbox class="owl-carousel-image-101">
+        <img src="https://www.scoota.asia/wp-content/uploads/2019/02/20190214_SCOOTA_website_feedback_v2.jpg" alt="">
+      </vbox>
+      <vbox class="owl-carousel-image-101">
+      <img src="https://www.scoota.asia/wp-content/uploads/2019/02/20190214_SCOOTA_website_feedback_v3.jpg" alt="">
+      </vbox>
+      <vbox class="owl-carousel-image-101">
+      <img src="https://www.scoota.asia/wp-content/uploads/2019/02/20190214_SCOOTA_website_feedback_v4.jpg" alt="">
+      </vbox>
+      <vbox class="owl-carousel-image-101">
+      <img src="https://www.scoota.asia/wp-content/uploads/2019/02/20190214_SCOOTA_website_feedback_v5.jpg" alt="">
+      </vbox>
+      <vbox class="owl-carousel-image-101">
+      <img src="https://www.scoota.asia/wp-content/uploads/2019/02/20190214_SCOOTA_website_feedback_v6.jpg" alt="">
+      </vbox>
+
+    </div>
+
+  </div>
+  </div>
+</template>
+
+
+
+
+<template name="right_panel_101">
+  <img src="https://www.scoota.asia/wp-content/themes/appton/assets/img/home/home-mockup.png" alt=""
+  style="
+    margin: 50px 0 0 50px;
+  ">
+</template>

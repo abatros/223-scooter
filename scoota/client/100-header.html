@@ -1,0 +1,61 @@
+<head>
+  <style>
+    nav#main div {
+      margin: 0px 10px;
+      font-size: 16px;
+      color: #4d557d;
+      display:inline-block;
+      white-space: nowrap;
+    }
+    nav#main div::after {
+      flex-grow:2;
+    }
+  </style>
+</head>
+
+<template name="header_100">
+<nav id="main"
+style="
+  position:absolute; width:100%;
+  z-index:100;
+  background-color:white;
+">
+<hbox
+  class="dashed"
+  style="
+    max-width:1170px; margin: 0px auto;
+    padding: 27px 0px;
+    justify-content: space-between;
+    align-items: center;
+    __position:absolute;
+    z-index:100;
+  ">
+  <img
+    src="https://www.scoota.asia/wp-content/uploads/2019/02/cropped-cropped-Scoota-Logo-JPEG.Resize-1-1.bmp"
+    class="custom-logo" alt="SCOOTA" width="250" height="63"
+    style="max-width:180px; height:auto;"
+    >
+    <div style="flex-grow:1;"></div>
+  <div>
+    About
+  </div>
+  <div style="flex-grow:0.1;"></div>
+  <div>How it works</div>
+  <div style="flex-grow:0.1;"></div>
+  <div>Locations</div>
+  <div style="flex-grow:0.1;"></div>
+<div>Shop</div>
+<div style="flex-grow:0.1;"></div>
+<div>News</div>
+<div style="flex-grow:0.1;"></div>
+<div>Contact</div>
+<div style="flex-grow:1;"></div>
+<div class="blue"
+  style="border-radius:5px; background-color:rgb(4, 176, 250); color:white; padding:0px 10px;"
+>
+BECOME A PARTNER
+</div>
+
+</hbox>
+</nav>
+</template>

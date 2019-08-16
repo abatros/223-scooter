@@ -1,0 +1,93 @@
+<head>
+  <style>
+    .hot-panel-105 {
+      border: 0px solid red;
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<template name="how_it_works_105">
+<section id='105'>
+<vbox
+class=""
+style="
+  padding-top:80px;
+  padding-bottom:50px;
+  width:100%; max-width:1170px; margin: 0px auto;
+"
+>
+
+<h2
+class=""
+><span style="color:#01b0f1;">How </span>It works?</h2>
+
+<p style="text-align:center;">
+  With SCOOTA you won’t be stuck in traffic no more. Riding SCOOTA is easy, fast and fun.
+</p>
+
+<hbox
+style="
+  width:100%;
+  justify-content: space-between;
+">
+  {{> panel_105 template='turn_on_105'}}
+  <span style="flex-grow: 1;"></span>
+  {{> panel_105 template='push_an_ride_105'}}
+  <span style="flex-grow: 1;"></span>
+  {{> panel_105 template='enjoy_105'}}
+</hbox>
+
+
+<p style="font-size:16px; padding:0 20px; text-align:center;">
+  Soon we will launch our SCOOTA ridesharing app which allows you to locate, start,
+  and pay for your SCOOTA rides via our mobile app.
+  Stay tuned and subscribe to get notified when we launch.
+  In case you have any questions, please get in touch with us.
+</p>
+
+</vbox>
+</section>
+</template>
+
+
+
+<template name="panel_105">
+  <vbox
+  class="panel-105"
+  style="
+  margin-bottom:50px; padding: 20px;
+  flex-basis: 180px;
+  flex-grow: 2;
+  align-items: center;
+  text-align:center;
+  ">
+  {{> Template.dynamic template=template}}
+  </vbox>
+</template>
+
+
+<template name='turn_on_105'>
+  <img src="https://www.scoota.asia/wp-content/uploads/2019/02/Scoota-25.jpg" alt="Home"
+  style="_height:100%; max-width:100%; object-fit: contain;"
+  >
+<h3>1. Turn on & start.</h3>
+<p>To turn on the e-scooter, push the “onbutton” on the handle bar. Check the tire pressure, the brakes and lights before riding.</p>
+</template>
+
+
+<template name='push_an_ride_105'>
+  <img src="https://www.scoota.asia/wp-content/uploads/2019/02/Scoota-27.jpg" alt="Home"
+  style="_height:100%; max-width:100%; object-fit: contain;"
+>
+<h3>2. Push & ride.</h3>
+<p>Push kick the e-scooter for 1-2 times until it moves forward, push down the speed knob – and you are already riding. Please wear a safety helmet.</p>
+</template>
+
+<template name='enjoy_105'>
+  <img src="https://www.scoota.asia/wp-content/uploads/2019/02/Scoota-40.jpg" alt="Home"
+  style="_height:100%; max-width:100%; object-fit: contain;"
+>
+<h3>3. Enjoy & smile.</h3>
+<p>SCOOTA brings you wherever you need to go – to work or just to run errands. Please always ride responsible and safe. And enjoy the ride.</p>
+</template>

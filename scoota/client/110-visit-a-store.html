@@ -1,0 +1,68 @@
+<head>
+  <style>
+  hbox.store-panel-110 {
+    align-items:center;
+    margin:0 20px;
+    background-color: #0BF;
+    border: 2px solid #01b0f1;
+    border-radius: 5px;
+    padding: 6px 10px;
+  }
+
+  hbox.store-panel-110:hover {
+    background-color: white;
+    color: #01b0f1;
+  }
+
+
+  hbox.store-panel-110 vbox {
+    padding-left:10px;
+  }
+
+  </style>
+</head>
+
+
+<template name="group_item">
+  {{> Template.dynamic template=template}}
+</template>
+
+
+
+
+<template name="visit_play_store_110">
+  <a href="https://play.google.com/store">
+  <hbox class="store-panel-110 group-item">
+    <i class="fab fa-android"></i>
+    <vbox>
+      <p class="zmp ft14">available on</p>
+      <h3 class="zmp ft18-700">Play Store</h3>
+    </vbox>
+  </hbox>
+</a>
+</template>
+
+
+<template name="visit_apple_store_110">
+  <a href="https://apple.com/store">
+  <hbox class="store-panel-110 group-item">
+    <i class="fab fa-apple"></i>
+    <vbox>
+      <p class="zmp ft14">available on</p>
+      <h3 class="zmp ft18-700">Apple Store</h3>
+    </vbox>
+  </hbox>
+  </a>
+</template>
+
+
+
+<template name="visit_apple_store_110_Obsolete">
+  <hbox class="store-panel-101 js-store-flip-flop" style=" align-items:center; margin:0 20px;">
+    <i class="fab fa-apple" style="padding:16px 16px 16px 0;"></i>
+    <vbox class="" style="">
+      <p class="zmp ft14">available on</p>
+      <h3 class="zmp ft18-700">Apple Store</h3>
+    </vbox>
+  </hbox>
+</template>

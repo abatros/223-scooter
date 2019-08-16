@@ -1,0 +1,9 @@
+<template name="visit_apple_store_101">
+  <hbox class="" style=" align-items:center; _margin:5px; margin:0 0 0 20px;">
+    <i class="fab fa-apple" style="padding:16px;"></i>
+    <vbox class="">
+      <p class="zmp ft14">available on</p>
+      <h3 class="zmp ft18-700">Apple Store</h3>
+    </vbox>
+  </hbox>
+</template>

@@ -1,0 +1,51 @@
+<head>
+  <style>
+    .store-panel-101 {
+      color: #ffffff;
+      background-color:  #01b0f1;
+      __border: 1px solid white;
+      padding: 10px 20px;
+    }
+
+    .xstore-panel-101:hover {
+    }
+
+    .last-visited-store {
+      color: #01b0f1;
+      background-color: #ffffff;
+      border-radius:5px;
+    }
+  </style>
+</head>
+
+<template name="visit_stores_101">
+  <hbox class="qc">
+    {{> visit_a_store template='visit_play_store_101_inner' visited=true}}
+    {{> visit_a_store template='visit_apple_store_101_inner'}}
+  </hbox>
+</template>
+
+
+
+<template name="visit_a_store">
+  <hbox class="store-panel-101 js-store-flip-flop" style=" align-items:center; margin:0 20px;">
+    {{> Template.dynamic template=template}}
+  </hbox>
+</template>
+
+
+<template name="visit_play_store_101_inner">
+    <i class="fab fa-android" style="padding:16px 16px 16px 0;"></i>
+    <vbox class="" >
+      <p class="zmp ft14">available on</p>
+      <h3 class="zmp ft18-700">Play Store</h3>
+    </vbox>
+</template>
+
+<template name="visit_apple_store_101_inner">
+    <i class="fab fa-apple" style="padding:16px 16px 16px 0;"></i>
+    <vbox class="" style="">
+      <p class="zmp ft14">available on</p>
+      <h3 class="zmp ft18-700">Apple Store</h3>
+    </vbox>
+</template>

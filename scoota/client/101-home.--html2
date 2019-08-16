@@ -1,0 +1,151 @@
+<head>
+  <style>
+  #home-101 h1 {
+    font-weight: 700;
+    line-height:1.1em;
+    margin: 0 0 15px;
+    padding:0;
+  }
+
+  #home-101 p {
+    font-weight:400;
+    text-align:center;
+  }
+
+  </style>
+</head>
+<template name="101-home">
+<section id="home"
+style="
+width:100%;
+  margin:0; padding:0;
+  background-image:    url(https://www.scoota.asia/wp-content/uploads/2019/02/herobg.jpg);
+  background-size:     100%;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;              /* optional, center the image */
+  __background:transparent url(https://www.scoota.asia/wp-content/uploads/2019/02/herobg.jpg) 100% 100%/cover no-repeat scroll;
+">
+{{!--
+  <hbox
+  style="
+  __background-color: rgb(1,176,241);
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  __align-content: center;
+  _width:80%;
+  _padding: 0 10% 0 10%;
+  min-height:100vw;
+  max-width:1170px; margin: 0px auto;
+  ">
+--}}
+
+
+  <vbox id="home-101"
+  style="
+    padding-top: 100px;
+    width:100%;
+    border: 1px dashed white;
+    align-items: center;
+    color: white;
+    "
+    >
+      <h1 style="font-size:60px;">Let’s ride. Now.</h1>
+      <p>
+        SCOOTA gets you wherever you need to go – whether you’re commuting to work,<br>
+        going to class, running errands or exploring your city.
+        Our electric scooters are fun, easy to ride and completely emission-free.
+      </p>
+      <p>
+        Sign up now to get notified when we launch our brand-new
+        ridesharing app in your city in Thailand.
+      </p>
+
+      <form action="" style="width:100%;">
+      {{> Template.dynamic template='101-subscribe'}}
+      </form>
+
+
+      <p>Soon available on</p>
+
+      {{> visit_stores_101}}
+    </vbox>
+
+{{!--
+  </hbox>
+  --}}
+</section>
+</template>
+
+
+<head>
+  <style>
+    button.subscribe-btn-101 {
+      background: #01b0f1;
+      color: white;
+    }
+
+    button.subscribe-btn-101:hover {
+      color: #01b0f1;
+      background:white;
+    }
+  </style>
+</head>
+
+
+
+<template name ="101-subscribe">
+  <vbox class="_ftec">
+    <hbox class="subscribe-101"
+    style="
+      width:80%; margin: 30px auto 3px auto;
+      padding:2px;
+      _margin-left:200px;
+      _align_items: center;
+      _align-content:center;
+      justify-content:space-between;
+      box-sizing:border-box;
+      _margin: 30px 80px;
+      _max-width: 600px;
+      background: #ffffff none repeat scroll 0 0;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      font-size: 18px;
+      height: 70px;
+      ">
+
+    <input class="subscriber-email" type="email" id="mc-email-5692" name="EMAIL"
+    placeholder="enter your email address here."
+    style="
+    background: transparent none repeat scroll 0 0;
+    outline:none;
+    border: 0 none;
+    font-size: 18px;
+    flex-grow:1;
+    __border-radius: 5px;
+    color: black;
+    letter-spacing: 1px;
+    _padding: 10px 11% 10px 30px;
+    margin: 10px;
+    ">
+
+    <button type="submit" class="plus-btn subscribe-btn-101"
+      style="
+      padding: 0 20px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: normal;
+      text-transform: none;
+      border: 2px solid #01b0f1;
+      border-radius: 5px;
+  ">Subscribe</button>
+
+    </hbox>
+
+    <hbox class="qc hide" style="margin-bottom:10px;">
+      Submitting...
+    </hbox>
+
+
+  </vbox>
+</template>

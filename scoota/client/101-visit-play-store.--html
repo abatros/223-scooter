@@ -1,0 +1,9 @@
+<template name="visit_play_store_101">
+  <hbox class="js-store-flip-flop" style="align-items:center;  margin:0 20px 0 0;">
+    <i class="fab fa-android" style="padding:16px;"></i>
+    <vbox class="" >
+      <p class="zmp ft14">available on</p>
+      <h3 class="zmp ft18-700">Play Store</h3>
+    </vbox>
+  </hbox>
+</template>
